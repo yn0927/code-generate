@@ -1,0 +1,12 @@
+package $class_path;
+
+#foreach ($package in $package_set)
+import $package;
+#end
+
+#foreach ($annotations in $annotations_set)
+@$annotations
+#end
+public interface $class_name {
+
+}
